@@ -2,5 +2,27 @@
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+}
+
+.node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.node__element {
+    height: 40px;
+    background-color: rgb(199, 145, 250);
+    border-radius: 16px;
+    min-width: 60px;
+    padding: 4px 8px;
+    font-size: 13px;
+    line-height: 32px;
+    text-align: center;
+    margin: 10px;
+}
+
+.node__children {
+    display: flex;
 }
