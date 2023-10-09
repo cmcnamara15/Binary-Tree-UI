@@ -5,6 +5,10 @@
     /* background-color: aquamarine; */
 }
 
+.title {
+    text-align: center;
+}
+
 .node {
     display: flex;
     flex-direction: column;
