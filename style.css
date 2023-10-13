@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 20px;
 }
 
 .node__element {
@@ -27,6 +28,14 @@
     margin: 10px;
 }
 
+.node__bottom-line {
+    /* height: 20px;
+    width: 1px;
+    background-color: #dcdcdc; */
+}
+
 .node__children {
     display: flex;
+    padding: 16px;
+    border-top: 1px solid #dcdcdc;
 }
