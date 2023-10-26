@@ -2,7 +2,7 @@
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
 }
 
 .title {
@@ -25,7 +25,6 @@
     font-size: 13px;
     line-height: 32px;
     text-align: center;
-    margin: 10px;
 }
 
 .node__bottom-line {
