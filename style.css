@@ -2,7 +2,7 @@
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .title {
@@ -14,6 +14,20 @@
     flex-direction: column;
     align-items: center;
     margin: 0 20px;
+    position: relative;
+}
+
+.node:not(.node--root) .node__element::before {
+    content: "";
+    height: 20px;
+    width: 1px;
+    background-color: #dcdcdc;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20px;
+    margin: auto;
 }
 
 .node__element {
@@ -28,9 +42,9 @@
 }
 
 .node__bottom-line {
-    /* height: 20px;
+    height: 20px;
     width: 1px;
-    background-color: #dcdcdc; */
+    background-color: #dcdcdc;
 }
 
 .node__children {
