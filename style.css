@@ -2,7 +2,7 @@
     margin-top: 30px;
     display: flex;
     justify-content: center;
-    /* background-color: aquamarine; */
+    background-color: aquamarine;
 }
 
 .title {
@@ -52,3 +52,16 @@
     padding: 16px;
     border-top: 1px solid #dcdcdc;
 }
+
+
+/* .node__bottom-line {
+    height: 20px;
+    width: 1px;
+    background-color: #dcdcdc;
+}
+
+.node__children {
+    display: flex;
+    padding: 16px;
+    border-top: 1px solid #dcdcdc;
+} */
