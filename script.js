@@ -31,17 +31,25 @@ const getTreeData = () => {
 };
 
 const renderTree = (node) => {
+    const {left, right, element} = node;
     return `
-        <div class="node__element">Root</div>
-        <div class="node__bottom-line"></div>
-        <div class="node__children">
-            <div class="node">
-                <div class="node__element">Left Child</div>
-            </div>
-            <div class="node">
-                <div class="node__element">Right Child</div>
-            </div>
-        </div>`
+        <div class="node__element">${element}</div>
+        ${
+            left || right 
+            ?  `<div class="node__ bottom-line"></div>
+                <div class="node__children">
+                    ${
+                        left ? (
+                            '' 
+                        ) : ''
+                    }
+                    <div class="node">
+                        <div class="node__element">Right Child</div>
+                    </div>
+                </div>`
+            : ''
+        }
+    `
 }
 
 const main = () => {
