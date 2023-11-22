@@ -40,17 +40,27 @@ const renderTree = (node) => {
                 <div class="node__children">
                     ${
                         left ? (
-                            '' 
+                            `
+                            <div class="node">
+                                ${renderTree(left)}
+                            </div>`
                         ) : ''
                     }
-                    <div class="node">
-                        <div class="node__element">Right Child</div>
+                    ${
+                        right ? 
+                            `
+                            <div class="node">
+                                ${renderTree(right)}
+                            </div>
+                        `
+                        : ""
+                    }
                     </div>
-                </div>`
-            : ''
+                    `
+                    : ""
         }
-    `
-}
+    `;
+};
 
 const main = () => {
 
