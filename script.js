@@ -63,7 +63,7 @@ const renderTree = (node) => {
 };
 
 const main = () => {
-
+    document.write(renderTree)
 }
 
 main(); 
