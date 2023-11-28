@@ -64,7 +64,9 @@ const renderTree = (node) => {
 
 const main = () => {
     const rootNode = getTreeData();
-    document.write(renderTree(rootNode))
+    const treeDOMElement = document.querySelector('.tree')
+    treeDOMElement.innerHTML = renderTree(rootNode)
+    // document.write(renderTree(rootNode))
 }
 
 main(); 
