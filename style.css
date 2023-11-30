@@ -2,7 +2,10 @@
     margin-top: 30px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     background-color: aquamarine;
+    align-items: center;
+    outline-style: dotted;
 }
 
 .title {
@@ -35,6 +38,7 @@
     background-color: rgb(199, 145, 250);
     border-radius: 16px;
     min-width: 60px;
+    max-width: max-content;
     padding: 4px 8px;
     font-size: 13px;
     line-height: 32px;
@@ -52,7 +56,6 @@
     padding: 16px;
     border-top: 1px solid #dcdcdc;
 }
-
 
 /* .node__bottom-line {
     height: 20px;
