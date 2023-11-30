@@ -41,7 +41,7 @@ const renderTree = (node) => {
                     ${
                         left ? (
                             `
-                            <div class="node">
+                            <div class="node node--left">
                                 ${renderTree(left)}
                             </div>`
                         ) : ''
@@ -49,7 +49,7 @@ const renderTree = (node) => {
                     ${
                         right ? 
                             `
-                            <div class="node">
+                            <div class="node node--right">
                                 ${renderTree(right)}
                             </div>
                         `
